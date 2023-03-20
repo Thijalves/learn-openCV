@@ -27,17 +27,5 @@ for contorno in contornos:
 
 cv.imshow('Azul detectado', img)
 
-
 cv.waitKey(0)
 cv.destroyAllWindows()
-
-# Loop through the contours and check if the color is present in the contour
-# for contour in contours:
-#     if cv2.contourArea(contour) > 0:
-#         (x, y), radius = cv2.minEnclosingCircle(contour)
-#         center = (int(x), int(y))
-#         radius = int(radius)
-#         cv2.circle(img, center, radius, (0, 255, 0), 2)
-        
-# cv2.imshow('Result', img)
-# cv2.waitKey(0)
