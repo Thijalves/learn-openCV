@@ -7,7 +7,7 @@ cv.imshow('Original', img)
 hsv = cv.cvtColor(img, cv.COLOR_BGR2HSV)
 # cv.imshow('HSV', hsv)
 
-lower_blue = np.array([110, 50, 50])
+lower_blue = np.array([240, 50, 50])
 upper_blue = np.array([130, 255, 255])
 
 mask = cv.inRange(hsv, lower_blue, upper_blue)
