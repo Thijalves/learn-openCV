@@ -22,7 +22,7 @@ contornos, hierarquias = cv.findContours(mask, cv.RETR_LIST, cv.CHAIN_APPROX_SIM
 
 for contorno in contornos:
     x,y,w,h = cv.boundingRect(contorno)
-    cv.rectangle(img, (x,y), (x+w,y+h), (0,0,0), 2)
+    cv.rectangle(img, (x,y), (x+w,y+h), (0,255,0), 2)
     cv.putText(img, 'X: %d  y: %d' % (x, y), (x,y+h+14), cv.FONT_HERSHEY_PLAIN, 1, (0,0,0), 1)
 
 cv.imshow('Azul detectado', img)
